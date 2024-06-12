@@ -19,7 +19,8 @@ NA
 
 1. Get the module via composer
    ```
-   composer require "rlbaako/magento2-excustomer":"~0"
+   composer config repositories.magento2-excustomer git https://github.com/rlbaako/magento2-excustomer.git 
+   composer require rlbaako/magento2-excustomer
    ```
 
    or via git
