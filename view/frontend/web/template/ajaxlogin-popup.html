@@ -1,0 +1,59 @@
+<div class="block-authentication"
+     data-bind="afterRender: setAjaxModelElement, blockLoader: isLoading"
+     style="display: none">
+
+    <div class="block block-customer-login"
+         data-bind="attr: {'data-label': $t('or')}">
+        <!-- ko foreach: getRegion('messages') -->
+        <!-- ko template: getTemplate() --><!-- /ko -->
+        <!--/ko-->
+        <!-- ko foreach: getRegion('before') -->
+        <!-- ko template: getTemplate() --><!-- /ko -->
+        <!-- /ko -->
+        <div class="login-fbk-existing-members" data-bind="html: ShowfbkMembersLoginCms"></div>
+        <div class="block-content" aria-labelledby="block-customer-login-heading">
+            <form class="form form-login"
+                  method="post"
+                  data-bind="event: {submit: login }"
+                  id="ajaxlogin-form">
+                <div class="fieldset login" data-bind="attr: {'data-hasrequired': $t('* Required Fields')}">
+                    <div class="field email required">
+                        <label class="label" for="ajaxlogin-email"><span data-bind="i18n: 'Email Address'"></span></label>
+                        <div class="control">
+                            <input name="username"
+                                   id="ajaxlogin-email"
+                                   type="email"
+                                   class="input-text"
+                                   data-bind="attr: {autocomplete: autocomplete}"
+                                   data-validate="{required:true, 'validate-email':true}">
+                        </div>
+                    </div>
+                    <div class="field password required">
+                        <label for="ajaxlogin-pass" class="label"><span data-bind="i18n: 'Password'"></span></label>
+                        <div class="control">
+                            <input name="password"
+                                   type="password"
+                                   class="input-text"
+                                   id="ajaxlogin-pass"
+                                   data-bind="attr: {autocomplete: autocomplete}"
+                                   data-validate="{required:true}">
+                        </div>
+                    </div>
+
+                    <div class="actions-toolbar">
+                        <div class="primary">
+                            <button type="submit" class="action action-login secondary" name="send" id="ajaxlogin-send">
+                                <span data-bind="i18n: 'Sign In'"></span>
+                            </button>
+                        </div>
+                        <div class="secondary">
+                            <a class="action" data-bind="attr: {href: forgotPasswordUrl}">
+                                <span data-bind="i18n: 'Forgot Your Password?'"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

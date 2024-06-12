@@ -1,0 +1,24 @@
+<?php
+/**
+* Module BCMarketplace_Excustomer
+* @author: Raphael Baako <rbaako@baakoconsultingllc.com>
+* @package: BCMarketplace_Excustomer
+* copyright: © Baako Consulting LLC. All rights reserved.
+*/
+?>
+<?php
+/**
+ * @var $block \BCMarketplace\Excustomer\Block\Customer
+ */
+?>
+
+<script>
+    window.excustomerData = <?= json_encode($block->getCustomerData())?>;
+</script>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "BCMarketplace_Excustomer/js/custom": ""
+        }
+    }
+</script>

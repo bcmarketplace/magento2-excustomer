@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/
+ * @author: Raphael Baako <rbaako@baakoconsultingllc.com>
+ * @package: BCMarketplace_Excustomer
+ *
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="footer-container">
+            <block class="BCMarketplace\Excustomer\Block\Customer" name="excustomer_footer" template="BCMarketplace_Excustomer::footer.phtml"/>
+        </referenceContainer>
+    </body>
+</page>
