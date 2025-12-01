@@ -19,13 +19,13 @@ NA
 
 1. Get the module via composer
    ```
-   composer config repositories.magento2-excustomer git https://github.com/rlbaako/magento2-excustomer.git 
-   composer require rlbaako/magento2-excustomer
+   composer config repositories.magento2-excustomer git https://github.com/bcmarketplace/magento2-excustomer.git 
+   composer require bcmarketplace/magento2-excustomer
    ```
 
    or via git
    ```
-   git clone https://github.com/rlbaako/magento2-excustomer.git app/code/BCMarketplace/Excustomer
+   git clone https://github.com/bcmarketplace/magento2-excustomer.git app/code/BCMarketplace/Excustomer
    ```
 
 2. Enable module
