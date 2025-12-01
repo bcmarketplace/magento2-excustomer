@@ -2,7 +2,7 @@
   "name": "bcmarketplace/magento2-excustomer",
   "description": "BCMarketplace Extended Customer module for Adobe Commerce.",
   "type": "magento2-module",
-  "version": "1.0.0",
+  "version": "1.2.1",
   "license": [
     "proprietary"
   ],
